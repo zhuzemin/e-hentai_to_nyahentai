@@ -11,7 +11,7 @@
 // @description:zh-CN A button in e-hentai, for search Gallery in nhentai
 // @include     https://exhentai.org/g/*/*
 // @include     https://e-hentai.org/g/*/*
-// @version     1.1
+// @version     1.11
 // @run-at      document-start
 // @grant         GM_registerMenuCommand
 // @grant         GM_setValue
@@ -55,8 +55,8 @@ function CreateButton(text,func){
 }
 
 var init = function () {
-    nyahentaiSite=GM_getValue('nyahentaiSite')||'https://en.nyahentai3.com';
-    CreateButton('Search in nyahentai',function () {
+    nyahentaiSite=GM_getValue('nhentaiSite')||'https://en.nyahentai3.com';
+    CreateButton('Search in nhentai',function () {
         SearchNyahentai();
 });
 
